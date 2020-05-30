@@ -1,0 +1,304 @@
+.slottt-machine-recipe {
+  margin: 0px auto;
+  width: 100vw;
+  text-align:center;
+}
+
+.slottt-machine-recipe__mask {
+    width: 100%;
+    height: 160px;
+    overflow: hidden; 
+    position: relative;
+    display: inline-block;
+    margin-bottom: -40px;
+}
+
+.slottt-machine-recipe__items_container {
+    position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto 0;
+}
+
+.slottt-machine-recipe__item {
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    background-size: contain;
+}
+
+/* Typography */
+
+#wrapper{
+	position:relative;
+	top:0px;
+	width:100%;
+	height:70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wrapper2{
+	width:100%;
+	height:20vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#wrapper3{
+	width:100%;
+	height:10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+html, body {
+  font-family: Helvetica, Arial, sans serif;
+  overflow:hidden;
+  overflow-x:hidden;
+  word-wrap: break-word;
+}
+
+.recipe_if, .recipe_then {
+    font-weight: bold;
+    font-size: 120px;
+	text-align:center;
+}
+
+.tagline {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+a:hover {
+ font-weight: bold;
+ text-decoration: none !important;
+ color: #2886de;
+}
+
+a,
+a:visited {
+ font-weight: bold;
+ text-decoration: none;
+ color: #33CCFF;
+}
+
+.clicker{
+	font-size: 80px;
+	margin-top:30px;
+	z-index:-1;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+
+}
+
+.clicker:hover {
+  color: #737373;
+  cursor: pointer;
+}
+
+/* Slide Text */
+
+.text_container{
+	position:absolute;
+	 margin-top: -200px;
+	padding-top: 20px;
+	width: 100vw;
+	visibility:hidden;
+}
+
+.text {
+  display:inline-block;
+  padding:30px 30px 30px 30px;
+  width: 100vw;
+  height: auto;
+  
+  overflow-y: scroll;
+  max-height:35vh;
+  
+  font-weight: bold;
+    font-size: 50px;
+	text-align:center;
+}
+
+.text::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.move{
+	visibility:visible;
+	animation: move 2s;
+}
+@keyframes move {
+  from { margin-left: -100vw; }
+  to { margin-left: 0px; }
+}
+
+.move_out{
+	margin-left: 100vw;
+	animation: move_out 2s;
+}
+@keyframes move_out {
+  from { margin-left: 0px; }
+  to { margin-left: 100vw; }
+}
+
+.move_spinner{
+	margin-top: -100px;
+	animation: move_spinner 2s;
+}
+@keyframes move_spinner {
+  from { margin-top: 0px; }
+  to { margin-top: -100px; }
+}
+
+
+.content {
+	position:absolute;
+	bottom:0px;
+	width: 100%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 1.85em;
+	vertical-align:bottom;
+}
+
+.content p {
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+	
+	 -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.content p:hover {
+	color: #737373;
+	cursor: pointer;
+}
+
+#up_click{
+	display:none;
+}
+
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.disqus{
+	position:relative;
+	top:100vh;
+	padding:0px 10vw 20px 10vw;
+	margin-top:20px;
+	
+	width:100%;
+	height:100vh;
+	max-height:80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	overflow-y:scroll;
+	 -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow: hidden!important;
+    }
+	
+	#wrapper{
+		height:20vh;
+	}
+	#wrapper2{
+		height:50vh;
+	}
+
+	.slottt-machine-recipe {
+		margin-top: 80px;
+		position:relative;
+	}
+	
+	.slottt-machine-recipe__mask {
+		height: 100px;
+		margin-bottom: -50px;
+		position:relative;
+	}
+	
+	.move_spinner{
+		margin-top: 50px;
+		margin-bottom: 0px;
+		animation: move_spinner 1s;
+	}
+	@keyframes move_spinner {
+	  from { margin-top: 80px; }
+	  to { margin-top: 50px; }
+	}
+		
+	.recipe_if, .recipe_then {
+		font-size: 50px;
+		line-height: 0.85em;
+	}
+	
+	.slottt-machine-recipe__mask{
+		z-index:-1;
+	}
+	
+	.clicker{
+		font-size: 40px;
+		margin-top: 40px;
+		position:relative;
+		z-index:1;
+	}
+	
+	.text_container{
+		 position:relative;
+		 margin-top:30px;
+		 height:100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.text {
+		font-size: 25px;
+		position: relative;
+top: 50%;
+transform: translateY(-50%);
+		max-height:60vh;
+		padding-top:0px;
+	}
+	
+	.content{
+		bottom:5px;
+	}
+	
+	.disqus{
+		position:relative;
+		top:120vh;
+	}
+}
